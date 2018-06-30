@@ -21,16 +21,16 @@ asjs=asreq.json()
 kqjs=kqreq.json()#空气质量
 
 
-print("今日天气：","最高温度:",ybjs["HeWeather6"][0]["daily_forecast"][0]["tmp_max"])
-print("今日天气：","最低温度:",ybjs["HeWeather6"][0]["daily_forecast"][0]["tmp_min"])
-print("今日天气：","风向:",ybjs["HeWeather6"][0]["daily_forecast"][0]["wind_dir"])
-print("今日天气：","降水量:",ybjs["HeWeather6"][0]["daily_forecast"][0]["pcpn"])
-print("今日天气：","紫外线强度指数:",ybjs["HeWeather6"][0]["daily_forecast"][0]["uv_index"])
-print("今日天气：","日出时间:",ybjs["HeWeather6"][0]["daily_forecast"][0]["sr"])
-print("今日天气：","日落时间:",ybjs["HeWeather6"][0]["daily_forecast"][0]["ss"])
+print("今日天气：","今日最高温度:",ybjs["HeWeather6"][0]["daily_forecast"][0]["tmp_max"])
+print("今日天气：","今日最低温度:",ybjs["HeWeather6"][0]["daily_forecast"][0]["tmp_min"])
+print("今日天气：","今日风向:",ybjs["HeWeather6"][0]["daily_forecast"][0]["wind_dir"])
+print("今日天气：","今日降水量:",ybjs["HeWeather6"][0]["daily_forecast"][0]["pcpn"])
+print("今日天气：","今日紫外线强度指数:",ybjs["HeWeather6"][0]["daily_forecast"][0]["uv_index"])
+print("今日天气：","今日日出时间:",ybjs["HeWeather6"][0]["daily_forecast"][0]["sr"])
+print("今日天气：","今日日落时间:",ybjs["HeWeather6"][0]["daily_forecast"][0]["ss"])
 
-print("空气质量:","数据更新时间:",kqjs["HeWeather6"][0]['air_now_station'][2]['pub_time'])
-print("空气质量:","地点:",kqjs["HeWeather6"][0]['air_now_station'][2]['air_sta'])
+print("空气质量:","空气质量数据更新时间:",kqjs["HeWeather6"][0]['air_now_station'][2]['pub_time'])
+print("空气质量:","空气质量检测地点:",kqjs["HeWeather6"][0]['air_now_station'][2]['air_sta'])
 print("空气质量:","空气质量:",kqjs["HeWeather6"][0]['air_now_station'][2]['qlty'])
 print("空气质量:","空气质量指数:",kqjs["HeWeather6"][0]['air_now_station'][2]['aqi'])
 
